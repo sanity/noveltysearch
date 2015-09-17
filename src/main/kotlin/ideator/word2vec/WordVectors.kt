@@ -1,7 +1,7 @@
 package ideator.word2vec
 
-import com.google.common.collect.Lists
-import com.google.common.collect.TreeMultimap
+import ideator.pca.PCATransformer
+import ideator.pca.buildPCA
 import java.util.*
 
 class WordVectors(val wordVectorMap: Map<String, Vector>, val maxLruLinks: Int = 7, val maxClosestLinks : Int = 3) {
